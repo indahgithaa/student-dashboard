@@ -1,0 +1,146 @@
+:root {
+    --search-background: rgba(255, 255, 255, 0.2)
+}
+
+.centered_entire {
+    display: flex;
+    flex-direction: row;
+}
+
+.side_dashboard_container, .profile {
+    display: flex;
+    width: 20vw;
+    align-items: center;
+    flex-direction: column;
+}
+
+.side_dashboard_container img {
+    width: 25px;
+    height: auto;
+}
+
+#student_photo {
+    width: 50px;
+    height: auto;
+}
+
+.main_grid_container {
+    width: 80vw;
+    height: auto;
+    display: flex;
+}
+
+#mark2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#mark {
+    margin-bottom: 30px;
+}
+
+/* Header or Navigation Bar */
+
+.header_container {
+    width: 100%;
+    padding: 5%;
+}
+
+.header_container img {
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+}
+
+.top_header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.search_bar {
+    width: 100%;
+    max-width: 600px;
+    background-color: #dde1e7;
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+    padding: 10px 20px;
+    border: 1px solid gray;
+    margin-right: 10vw;
+}
+
+.search_bar input {
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    width: 100%;
+    width: 800px;
+}
+
+.search_bar img {
+    width: 15px;
+    height: auto;
+}
+
+.search_bar button {
+    border: 0;
+    border-radius: 60px;
+    background-color: #dde1e7;
+    cursor: pointer;
+}
+
+/* Bottom Header */
+
+.bottom_header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.greeting {
+    display: inline-grid;
+    grid-template: 20px 30px 20px / 40px 30px;
+}
+
+.greeting img {
+    width: 50px;
+    height: 50px;
+}
+
+.greeting p {
+    grid-column: 3 / 3;
+    grid-row: 1 / 1;
+    margin-top: 5px;
+}
+
+.greeting h2 {
+    grid-column: 3 / 3;
+    margin-top: 5px;
+}
+
+.logo {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    top: 50%;
+}
+
+.logo img {
+    width: 25px;
+    height: 25px;
+}
+
+.logo button {
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 60px;
+    border: 0;
+}
