@@ -1,19 +1,32 @@
-:root {
-    --search-background: rgba(255, 255, 255, 0.2)
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .centered_entire {
     display: grid;
-    grid-template-columns: 250px 1fr;
+    grid-template-columns: 20vw 1fr;
 }
 
 .beside_sidebar {
+    width: 80vw
+}
+
+.main_grid_container {
     padding: 5%;
+    padding-top: 0;
 }
 
 .side_dashboard_container {
     display: grid;
     grid-template-rows: 1fr;
+    position: sticky;
+    top: 0;
+    height: 600px;
 }
 
 .side_dashboard_container, .profile {
@@ -46,7 +59,12 @@
 /* Header or Navigation Bar */
 
 .header_container {
-    width: 100%;
+    width: 80vw;
+    position: sticky;
+    top: 0;
+    height: auto;
+    padding: 5% 5% 10px 5%;
+    background-color: white;
 }
 
 .header_container img {
@@ -151,7 +169,7 @@
 /* Overview */
 
 .overview_container {
-    max-width: 600px;
+    max-width: 750px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 40px;
@@ -175,14 +193,13 @@
     height: 120px;
     border: 1px solid gray;
     overflow: scroll;
-    max-width: 560px;
-    padding: 20px;
+    max-width: 750px;
 }
 
 .todo_container {
     display: grid;
-    width: 600px;
-    grid-template-columns: 250px 1fr;
+    width: 750px;
+    grid-template-columns: 1fr 1fr;
     gap: 50px;
     margin-top: 30px;
 }
@@ -193,7 +210,7 @@
 
 .todo_elements {
     border: 1px solid gray;
-    height: 150px;
+    height: 240px;
     overflow: scroll;
     max-width: fit-content;
 }
@@ -205,5 +222,10 @@
 
 #check p {
     margin-left: 5px;
+}
+
+video {
+    width: 450px;
+    height: auto;
 }
 
