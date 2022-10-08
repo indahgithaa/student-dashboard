@@ -26,35 +26,84 @@
             <h5>Projects</h5>
         </aside>
         <!-- Header -->
-        <header class="header_container">
-            <section class="top_header">
-                <form action="#" class="search_bar">
-                    <input type="text" name="q">
-                    <button type="submit"><img src="images/search.png"></button>
-                </form>
-                <img style="margin-right: 15px;" src="images/notification-bell.png">
-                <img src="images/moon.png">
-            </section>
+        <div class="beside_sidebar">
+            <header class="header_container">
+                <section class="top_header">
+                    <form action="#" class="search_bar">
+                        <input type="text" name="q">
+                        <button type="submit"><img src="images/search.png"></button>
+                    </form>
+                    <img style="margin-right: 15px;" src="images/notification-bell.png">
+                    <img src="images/moon.png">
+                </section>
 
-            <section class="bottom_header">
-                <div class="greeting">
-                    <img src="images/crescent-moon.png">
-                    <p>Hello, </p>
-                    <h2>Hikumi!</h2>
-                </div>
-                <div class="logo">
-                    <img src="images/odinproject.png">
-                    <img src="images/freecodecamp.png">
-                    <img src="images/w3schools-logo-icon.png">
-                    <button><img style="width: 15px; height: 15px;" src="images/plus.png"></button>
-                </div>
-            </section>
-
-        </header>
-        <!-- Main Contents -->
-        <section class="main_grid_container">
-
-        </section>
+                <section class="bottom_header">
+                    <div class="greeting">
+                        <img src="images/crescent-moon.png">
+                        <p>Hello, </p>
+                        <h2>Hikumi!</h2>
+                    </div>
+                    <div class="logo">
+                        <img src="images/odinproject.png">
+                        <img src="images/freecodecamp.png">
+                        <img src="images/w3schools-logo-icon.png">
+                        <button><img style="width: 15px; height: 15px;" src="images/plus.png"></button>
+                    </div>
+                </section>
+            </header>
+            <!-- main contents -->
+            <main class="main_grid_container">
+                <h4 id="title">Overview</h4>
+                <section class="overview_container">
+                    <div class="overview_sub">
+                        <p id="topper_overview">Projects Built</p>
+                        <p id="number">5</p>
+                        <p id="bottom_overview">The Odin Project</p>
+                    </div>
+                    <div class="overview_sub">
+                        <p id="topper_overview">Days Passed</p>
+                        <p id="number">50</p>
+                        <p id="bottom_overview">100 Days of Code</p>
+                    </div>
+                    <div class="overview_sub">
+                        <p id="topper_overview">Courses Completed</p>
+                        <p id="number">3</p>
+                        <p id="bottom_overview">All Resources</p>
+                    </div>
+                </section>
+                <h4 id="title">Assignments</h4>
+                <section class="assignments_container">
+                    <p>Test Driven Development exercises</p>
+                    <p>Array functions (map, reduce, sort, filter) exercises</p>
+                    <p>Admin dashboard project</p>
+                    <p>3 katas on Codewars</p>
+                </section>
+                <section class="todo_container">
+                    <img src="images/calendar.png">
+                    <div class="todo">
+                        <h4 id="title">To Do</h4>
+                        <div class="todo_elements">
+                            <div id="check">
+                                <input type="checkbox">
+                                <p>Work more on the dashboard project</p>
+                            </div>
+                            <div id="check">
+                                <input type="checkbox">
+                                <p>Go to array exercises from Wes Bos</p>
+                            </div>
+                            <div id="check">
+                                <input type="checkbox">
+                                <p>Gather some free resources to learn React</p>
+                            </div>
+                            <div id="check">
+                                <input type="checkbox">
+                                <p>Enroll Responsive Web Design course from FCC</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
     </div>
 </body>
 </html>

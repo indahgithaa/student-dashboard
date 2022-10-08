@@ -3,8 +3,17 @@
 }
 
 .centered_entire {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 250px 1fr;
+}
+
+.beside_sidebar {
+    padding: 5%;
+}
+
+.side_dashboard_container {
+    display: grid;
+    grid-template-rows: 1fr;
 }
 
 .side_dashboard_container, .profile {
@@ -24,12 +33,6 @@
     height: auto;
 }
 
-.main_grid_container {
-    width: 80vw;
-    height: auto;
-    display: flex;
-}
-
 #mark2 {
     display: flex;
     align-items: center;
@@ -44,7 +47,6 @@
 
 .header_container {
     width: 100%;
-    padding: 5%;
 }
 
 .header_container img {
@@ -56,7 +58,7 @@
 .top_header {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    max-width: 850px;
 }
 
 .search_bar {
@@ -68,7 +70,7 @@
     border-radius: 60px;
     padding: 10px 20px;
     border: 1px solid gray;
-    margin-right: 10vw;
+    margin-right: auto;
 }
 
 .search_bar input {
@@ -97,6 +99,7 @@
 .bottom_header {
     display: flex;
     flex-direction: row;
+    max-width: 850px;
     justify-content: space-between;
     align-items: center;
     margin-top: 20px;
@@ -144,3 +147,63 @@
     border-radius: 60px;
     border: 0;
 }
+
+/* Overview */
+
+.overview_container {
+    max-width: 600px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+}
+
+.overview_container div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid gray;
+    padding: 0%;
+}
+
+#number {
+    font-size: 30px;
+    margin: 0;
+}
+
+.assignments_container {
+    height: 120px;
+    border: 1px solid gray;
+    overflow: scroll;
+    max-width: 560px;
+    padding: 20px;
+}
+
+.todo_container {
+    display: grid;
+    width: 600px;
+    grid-template-columns: 250px 1fr;
+    gap: 50px;
+    margin-top: 30px;
+}
+
+.todo_container img {
+    width: 100%;
+}
+
+.todo_elements {
+    border: 1px solid gray;
+    height: 150px;
+    overflow: scroll;
+    max-width: fit-content;
+}
+
+#check {
+    display: flex;
+    flex-direction: row;
+}
+
+#check p {
+    margin-left: 5px;
+}
+
