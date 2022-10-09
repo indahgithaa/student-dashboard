@@ -21,7 +21,7 @@ body {
     padding-top: 0;
     display: grid;
     grid-template-columns: 600px 150px;
-    column-gap: 40px;
+    column-gap: 50px;
 }
 
 .side_dashboard_container {
@@ -205,6 +205,7 @@ body {
 
 #no_due {
     margin-top: -10px;
+    border-bottom: 1px solid gray;
 }
 
 .todo_container {
@@ -257,3 +258,7 @@ video {
 }
 
 /* Goals */
+
+.goals li {
+    margin-bottom: 10px;
+}
