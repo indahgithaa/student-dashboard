@@ -1,3 +1,29 @@
+/* Importing fonts */
+@font-face {
+    font-family: poppinsR;
+    src: url(fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: poppinsM;
+    src: url(fonts/Poppins-Medium.ttf);
+}
+
+@font-face {
+    font-family: poppinsG;
+    src: url(fonts/Poppins-Light.ttf);
+}
+
+@font-face {
+    font-family: poppinsEB;
+    src: url(fonts/Poppins-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family: poppinsB;
+    src: url(fonts/Poppins-Bold.ttf);
+}
+
 body {
     margin: 0;
     padding: 0;
