@@ -19,7 +19,9 @@ body {
 .main_grid_container {
     padding: 5%;
     padding-top: 0;
-    width: 700px;
+    display: grid;
+    grid-template-columns: 600px 150px;
+    column-gap: 40px;
 }
 
 .side_dashboard_container {
@@ -171,7 +173,6 @@ body {
 /* Overview */
 
 .overview_container {
-    max-width: 620px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 40px;
@@ -191,16 +192,23 @@ body {
     margin: 0;
 }
 
+/* Assignments */
 #assignments {
     height: 200px;
     border: 1px solid gray;
     overflow: scroll;
-    max-width: 620px;
+}
+
+#assignments p {
+    margin-left: 30px;
+}
+
+#no_due {
+    margin-top: -10px;
 }
 
 .todo_container {
     display: grid;
-    width: 620px;
     grid-template-columns: 1fr 1fr;
     gap: 50px;
     margin-top: 30px;
@@ -230,10 +238,17 @@ video {
     width: 90%;
 }
 
+.projects {
+    display: grid;
+    grid-template-rows: repeat (4, 350px);
+    row-gap: 10px;
+}
+
 .project_sub {
     display: grid;
     grid-template-columns: 400px 1fr;
     gap: 30px;
+    border: 1px solid gray;
 }
 
 #stack {
