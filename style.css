@@ -24,9 +24,19 @@
     src: url(fonts/Poppins-Bold.ttf);
 }
 
+@font-face {
+    font-family: poppinsSB;
+    src: url(fonts/Poppins-SemiBold.ttf);
+}
+
 body {
     margin: 0;
     padding: 0;
+}
+
+#title {
+    font-family: poppinsB;
+    font-size: 25px;
 }
 
 .centered_entire {
@@ -42,18 +52,20 @@ body {
     padding: 5%;
     padding-top: 0;
     display: grid;
-    grid-template-columns: 600px 250px;
+    grid-template-columns: 4fr 1fr;
     column-gap: 50px;
+    background-color: #F9F7F7;
+    font-family: poppinsR;
 }
 
 .side_dashboard_container {
     position: sticky;
+    font-family: poppinsB;
     top: 0;
     height: 100vh;
-    padding: 0.5em 0 0.5em 0.5em;
     margin-left: 0;
-    background: rgb(0,30,36);
-    background: linear-gradient(90deg, rgba(0,30,36,0.958420868347339) 0%, rgba(9,66,121,1) 35%, rgba(0,112,255,1) 100%);
+    background: rgb(14,45,117);
+    background: linear-gradient(90deg, rgba(14,45,117,1) 0%, rgba(28,56,121,1) 35%, rgba(49,70,120,1) 80%, rgba(45,68,120,1) 100%);
 }
 
 .side_dashboard_container, .profile {
@@ -85,7 +97,7 @@ body {
 
 /* Header or Navigation Bar */
 
-img {
+.top_header img {
     width: 35px;
     height: 35px;
     cursor: pointer;
@@ -145,6 +157,7 @@ img {
     align-items: center;
     margin-top: 20px;
     padding: 0 5% 10px 5%;
+    font-family: poppinsR;
 }
 
 .greeting {
@@ -196,6 +209,7 @@ img {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 40px;
+    color: white;
 }
 
 .overview_container div {
@@ -203,19 +217,24 @@ img {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    border: 1px solid gray;
-    padding: 0%;
+    background-color: #112D4E;
+    border-radius: 20px;
+}
+
+#topper_overview {
+    font-family: poppinsSB;
 }
 
 #number {
     font-size: 30px;
     margin: 0;
+    font-family: poppinsEB;
 }
 
 /* Assignments */
 #assignments {
     height: 200px;
-    border: 1px solid gray;
+    background-color: #DBE2EF;
     overflow: scroll;
 }
 
@@ -236,19 +255,19 @@ img {
 }
 
 .todo_container img {
-    width: 100%;
+    width: 20em;
 }
 
 .todo_elements {
-    border: 1px solid gray;
-    height: 150px;
+    background-color: #DBE2EF;
+    height: 200px;
     overflow: scroll;
-    max-width: fit-content;
 }
 
 #check {
     display: flex;
     flex-direction: row;
+    border-bottom: 1px solid gray;
 }
 
 #check p {
@@ -269,7 +288,8 @@ video {
     display: grid;
     grid-template-columns: 400px 1fr;
     gap: 10px;
-    border: 1px solid gray;
+    background-color: white;
+
 }
 
 #stack {
@@ -280,5 +300,12 @@ video {
 /* Goals */
 
 .goals li {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.goal_sub {
+    background-color: #3F72AF;
+    padding: 10px 20px 10px 10px;
+    color: white;
+    border-radius: 10px;
 }
