@@ -1,6 +1,11 @@
 /* Importing fonts */
 
 @font-face {
+    font-family: anonymous;
+    src: url(fonts/Anonymous_Pro.ttf);
+}
+
+@font-face {
     font-family: poppinsR;
     src: url(fonts/Poppins-Regular.ttf);
 }
@@ -28,10 +33,6 @@
 @font-face {
     font-family: poppinsSB;
     src: url(fonts/Poppins-SemiBold.ttf);
-}
-
-:root {
-    --shadow-box: 4px 4px 5px rgba(0, 0, 0, 0.342);
 }
 
 /* All Elements */
@@ -69,6 +70,8 @@ body {
 
 .side_dashboard_container {
     position: sticky;
+    transition: 0.5s;
+    box-sizing: initial;
     font-family: poppinsB;
     top: 0;
     height: 100vh;
@@ -137,6 +140,57 @@ body {
     flex-direction: column;
     padding: 10px;
     z-index: 2;
+    position: absolute;
+    width: 220px;
+}
+
+/* Hover Effect: https://stackoverflow.com/questions/72154402/my-navigation-bar-height-increases-when-hovering-over-the-links-is-the-line-un */
+
+.sidebar_sub li {
+    position: relative;
+    list-style: none;
+    width: 100%;
+}
+
+.sidebar_sub li a {
+    position: relative;
+    display: block;
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    color: white;
+}
+
+.sidebar_sub li a .icon {
+    position: relative;
+    display: block;
+    min-width: 50px;
+    height: 60px;
+    line-height: 70px;
+    text-align: center;
+}
+
+.sidebar_sub li a .icon ion-icon {
+    font-size: 1.5em;
+}
+
+.sidebar_sub li a .menu {
+    position: relative;
+    display: block;
+    padding-left: 10px;
+    height: 60px;
+    line-height: 60px;
+    white-space: normal;
+}
+
+.sidebar_sub li:hover {
+    background: white;
+    transition: all ease 0.3s;
+    width: 100%;
+}
+
+.sidebar_sub li a:hover {
+    color: #112D4E;
 }
 
 /* Header or Navigation Bar */
@@ -353,6 +407,8 @@ video {
     display: inline-block;
     margin-top: 2px;
 }
+
+
 
 /* Goals */
 

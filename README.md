@@ -1,1 +1,1 @@
-# student-dashboard
+# Student Dashboard
