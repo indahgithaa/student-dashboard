@@ -25,8 +25,17 @@
 }
 
 body {
-    display: flex;
-    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.centered_entire {
+    display: grid;
+    grid-template-columns: 300px auto;
+}
+
+.beside_sidebar {
+    float: right;
 }
 
 .main_grid_container {
@@ -40,14 +49,18 @@ body {
 .side_dashboard_container {
     position: sticky;
     top: 0;
-    height: 600px;
-    float: left;
+    height: 100vh;
+    padding: 0.5em 0 0.5em 0.5em;
+    margin-left: 0;
+    background: rgb(0,30,36);
+    background: linear-gradient(90deg, rgba(0,30,36,0.958420868347339) 0%, rgba(9,66,121,1) 35%, rgba(0,112,255,1) 100%);
 }
 
 .side_dashboard_container, .profile {
     display: flex;
     align-items: center;
     flex-direction: column;
+    color: white;
 }
 
 .side_dashboard_container img {
@@ -72,16 +85,7 @@ body {
 
 /* Header or Navigation Bar */
 
-.header_container {
-    position: sticky;
-    top: 0;
-    height: auto;
-    padding: 5% 5% 10px 5%;
-    background-color: white;
-    z-index: 1;
-}
-
-.header_container img {
+img {
     width: 35px;
     height: 35px;
     cursor: pointer;
@@ -90,12 +94,18 @@ body {
 .top_header {
     display: flex;
     flex-direction: row;
-    width: 900px;
+    position: sticky;
+    background-color: white;
+    top: 0;
+    height: min-content;
+    margin-top: 4%;
+    padding: 1% 5% 10px 5%;
 }
 
 .search_bar {
     width: 100%;
     max-width: 600px;
+    height: 15px;
     background-color: #dde1e7;
     display: flex;
     align-items: center;
@@ -131,10 +141,10 @@ body {
 .bottom_header {
     display: flex;
     flex-direction: row;
-    width: 900px;
     justify-content: space-between;
     align-items: center;
     margin-top: 20px;
+    padding: 0 5% 10px 5%;
 }
 
 .greeting {
@@ -258,7 +268,7 @@ video {
 .project_sub {
     display: grid;
     grid-template-columns: 400px 1fr;
-    gap: 30px;
+    gap: 10px;
     border: 1px solid gray;
 }
 
