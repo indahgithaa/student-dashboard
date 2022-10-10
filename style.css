@@ -29,6 +29,10 @@
     src: url(fonts/Poppins-SemiBold.ttf);
 }
 
+:root {
+    --shadow-box: 4px 4px 5px rgba(0, 0, 0, 0.342);
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -41,7 +45,7 @@ body {
 
 .centered_entire {
     display: grid;
-    grid-template-columns: 300px auto;
+    grid-template-columns: 250px auto;
 }
 
 .beside_sidebar {
@@ -52,7 +56,7 @@ body {
     padding: 5%;
     padding-top: 0;
     display: grid;
-    grid-template-columns: 4fr 1fr;
+    grid-template-columns: 5fr 2fr;
     column-gap: 50px;
     background-color: #F9F7F7;
     font-family: poppinsR;
@@ -64,8 +68,7 @@ body {
     top: 0;
     height: 100vh;
     margin-left: 0;
-    background: rgb(14,45,117);
-    background: linear-gradient(90deg, rgba(14,45,117,1) 0%, rgba(28,56,121,1) 35%, rgba(49,70,120,1) 80%, rgba(45,68,120,1) 100%);
+    background-image: linear-gradient( 96.5deg,  rgba(39,103,187,1) 10.4%, rgba(16,72,144,1) 87.7% );
 }
 
 .side_dashboard_container, .profile {
@@ -83,6 +86,9 @@ body {
 #student_photo {
     width: 50px;
     height: auto;
+    background-color: #dde1e7;
+    padding: 15px;
+    border-radius: 40px;
 }
 
 #mark2 {
@@ -92,7 +98,29 @@ body {
 }
 
 #mark {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+}
+
+.sidebar_sub {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+.sidebar_sub > h5:hover {
+    background-color: #3F72AF;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 20px;
+    transition: 0.3s all ease;
 }
 
 /* Header or Navigation Bar */
@@ -112,6 +140,7 @@ body {
     height: min-content;
     margin-top: 4%;
     padding: 1% 5% 10px 5%;
+    z-index: 1;
 }
 
 .search_bar {
@@ -158,6 +187,7 @@ body {
     margin-top: 20px;
     padding: 0 5% 10px 5%;
     font-family: poppinsR;
+    box-shadow: 0 0.2em 0.2em rgba(0,0,0,0.3);
 }
 
 .greeting {
@@ -219,6 +249,7 @@ body {
     flex-direction: column;
     background-color: #112D4E;
     border-radius: 20px;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.342);
 }
 
 #topper_overview {
@@ -236,6 +267,8 @@ body {
     height: 200px;
     background-color: #DBE2EF;
     overflow: scroll;
+    border-radius: 10px;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.342);
 }
 
 #assignments p {
@@ -247,21 +280,27 @@ body {
     border-bottom: 1px solid gray;
 }
 
+/* To-Do */
+
 .todo_container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 50px;
-    margin-top: 30px;
 }
 
 .todo_container img {
-    width: 20em;
+    width: 25em;
+    margin: auto;
+    padding: 2px;
+    border-radius: 0px;
+    margin-top: 25px;
+    margin-left: -50px;
 }
 
 .todo_elements {
     background-color: #DBE2EF;
     height: 200px;
     overflow: scroll;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.342);
 }
 
 #check {
@@ -281,7 +320,7 @@ video {
 .projects {
     display: grid;
     grid-template-rows: repeat (4, 350px);
-    row-gap: 10px;
+    row-gap: 30px;
 }
 
 .project_sub {
@@ -289,7 +328,7 @@ video {
     grid-template-columns: 400px 1fr;
     gap: 10px;
     background-color: white;
-
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.342);
 }
 
 #stack {
@@ -308,4 +347,28 @@ video {
     padding: 10px 20px 10px 10px;
     color: white;
     border-radius: 10px;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.342);
+}
+
+/* Trending */
+
+.announcements {
+    background-color: white;
+    border-bottom: 1px solid gray;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.342);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.sub_announce {
+    border-bottom: 1px solid gray;
+    padding-bottom: 10px;
+}
+
+.sub_announce h5 {
+    font-size: 15px;
+}
+
+.sub_announce a {
+    text-decoration: none;
 }
