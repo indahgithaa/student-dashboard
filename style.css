@@ -66,6 +66,10 @@ body {
     font-family: poppinsR;
 }
 
+.maincontent {
+    max-width: 960px;
+}
+
 /* Sidebar */
 
 .side_dashboard_container {
@@ -408,7 +412,29 @@ video {
     margin-top: 2px;
 }
 
+.htm {
+    background-color: rgb(235, 124, 124);
+    border-radius: 10px;
+    color: red;
+    font-family: anonymous;
+    padding: 5px;
+}
 
+.css {
+    background-color: #7c98b9;
+    border-radius: 10px;
+    color: darkblue;
+    font-family: anonymous;
+    padding: 5px;
+}
+
+.js {
+    background-color: rgb(209, 209, 70);
+    border-radius: 10px;
+    color: rgb(133, 89, 8);
+    font-family: anonymous;
+    padding: 5px;
+}
 
 /* Goals */
 
