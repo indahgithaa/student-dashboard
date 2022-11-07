@@ -46,6 +46,8 @@
     --goals: #3F72AF;
     --todo: #DBE2EF;
     --trending: #ffffff;
+    --overview-font: #ffffff;
+    --goals-font: #000000;
 }
 
 .dark-mode {
@@ -60,6 +62,8 @@
     --todo: #1f2940;
     --trending: #121729;
     --link-trend: #667497;
+    --overview-font: #cdd3e2;
+    --goals-font: #cdd3e2;
 }
 
 
@@ -354,7 +358,7 @@ body {
     background-color: var(--overview);
     border-radius: 20px;
     box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.342);
-    color: white;
+    color: var(--overview-font)
 }
 
 #topper_overview {
@@ -377,12 +381,14 @@ body {
     box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.342);
 }
 
-#assignments p {
+#assign {
     margin-left: 30px;
+    color: var(--goals-font);
 }
 
 #no_due {
     margin-top: -10px;
+    margin-left: 30px;
     border-bottom: 1px solid gray;
     color: gray;
 }
@@ -405,6 +411,7 @@ body {
 
 .todo_elements {
     background-color: var(--todo);
+    color: var(--goals-font);
     height: 200px;
     overflow: scroll;
     box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.342);
@@ -440,6 +447,10 @@ video {
     box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.342);
 }
 
+.project_sub p {
+    color: var(--goals-font)
+}
+
 #stack {
     display: inline-block;
     margin-top: 2px;
@@ -454,7 +465,7 @@ video {
 .goal_sub {
     background-color: var(--goals);
     padding: 10px 20px 10px 10px;
-    color: white;
+    color: var(--overview-font);
     border-radius: 10px;
     box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.342);
 }
@@ -472,6 +483,7 @@ video {
 .sub_announce {
     border-bottom: 1px solid gray;
     padding-bottom: 10px;
+    color: var(--goals-font);
 }
 
 .sub_announce h5 {
