@@ -382,8 +382,8 @@ body {
 }
 
 #assign {
-    margin-left: 30px;
     color: var(--goals-font);
+    margin-left: 30px;
 }
 
 #no_due {
