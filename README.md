@@ -1,8 +1,12 @@
 # Student Dashboard
 
-[click here](https://lemonaisu888.github.io/student-dashboard) for live preview!
+[click here](https://lemonade-studentdashboard.netlify.app) for live preview!
 
-![preview](images/dashboard.png)
+#### Light Mode
+![preview](images/dashboard3.png)
+
+#### Dark Mode (Updated!)
+![preview](images/dashboard2.png)
 
 A dashboard that can help you to take a quick overview on your learning stuffs. I tried to put my knowledge of CSS Grid basic concepts into practice.
 
