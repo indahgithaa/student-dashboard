@@ -1,6 +1,6 @@
 # Student Dashboard
 
-[click here](https://lemonice.github.io/student-dashboard) for live preview!
+[click here](https://lemonaisu888.github.io/student-dashboard) for live preview!
 
 ![preview](images/dashboard.png)
 

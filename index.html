@@ -59,12 +59,12 @@
                     <input type="text" name="q">
                     <button type="submit"><img src="images/search.png"></button>
                 </form>
-                <img style="margin-right: 15px;" src="images/notification-bell.png">
-                <img src="images/moon.png">
+                <img id="bell" style="margin-right: 15px;" src="images/4781824_alarm_alert_attention_bell_clock_icon (1).png">
+                <img id="mode-icon" src="images/2205210_dard_moon_night_stars_icon.png">
             </header>
             <header class="bottom_header">
                 <div class="greeting">
-                    <img src="images/sunshine.png">
+                    <img id="greet-img" src="images/sunshine.png">
                     <p>Hello, </p>
                     <h2>Hikumi!</h2>
                 </div>
@@ -151,7 +151,7 @@
                 </div>
                 <section class="projects">
                     <div class="project_sub">
-                        <video controls loop src="videos/calculator.mp4" autoplay></video>
+                        <video loop src="videos/calculator.mp4" autoplay muted></video>
                         <div id="info">
                             <h4>Calculator</h4>
                             <p>Built with:</p>
@@ -161,7 +161,7 @@
                         </div>
                     </div>
                     <div class="project_sub">
-                        <video controls loop src="videos/etch-a-sketch.mp4" autoplay></video>
+                        <video loop src="videos/etch-a-sketch.mp4" autoplay muted></video>
                         <div id="info">
                             <h4>Etch a Sketch!</h4>
                             <p>Built with:</p>
@@ -171,7 +171,7 @@
                         </div>
                     </div>
                     <div class="project_sub">
-                        <video controls loop src="videos/form.mp4" autoplay></video>
+                        <video loop src="videos/form.mp4" autoplay muted></video>
                         <div id="info">
                             <h4>Sign-Up Form</h4>
                             <p>Built with:</p>
@@ -180,7 +180,7 @@
                         </div>
                     </div>
                     <div class="project_sub">
-                        <video controls loop src="videos/rockpaperscissors.mp4" autoplay></video>
+                        <video loop src="videos/rockpaperscissors.mp4" autoplay muted></video>
                         <div id="info">
                             <h4>Rock, Paper, Scissors</h4>
                             <p>Built with:</p>
@@ -190,7 +190,7 @@
                         </div>
                     </div>
                     <div class="project_sub">
-                        <video controls loop src="videos/landingpage.mp4" autoplay></video>
+                        <video loop src="videos/landingpage.mp4" autoplay muted></video>
                         <div id="info">
                             <h4>MBTI Landing Page</h4>
                             <p>Built with:</p>
@@ -220,14 +220,16 @@
                 <h4 id="title">Trending</h4>
                 <section class="announcements">
                     <div class="sub_announce">
-                        <h5>Udemy Upcoming Sale 2022!</h5>
+                        <h5>How Often Does Udemy Have Sales?</h5>
                         <p>Udemy offers these $10 sales roughly nine times a year! Basing this on previous sales throughout the years... </p>
-                        <a href="#">Read More</a>
+                        <p id="source">onlinecoursehow.com</p>
+                        <a href="https://zoutons.com/news/udemy-upcoming-sale">Read More</a>
                     </div>
                     <div class="sub_announce">
                         <h5>Most Popular Web Frameworks to Use</h5>
                         <p>The right web framework can assist you in the development of such web applications and websites...</p>
-                        <a href="#">Read More</a>
+                        <p id="source">monocubed.com</p>
+                        <a href="https://www.monocubed.com/blog/most-popular-web-frameworks/">Read More</a>
                     </div>
                 </section>
             </div> 
@@ -236,5 +238,6 @@
     </div>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="script.js"></script>
 </body>
 </html>

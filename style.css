@@ -35,11 +35,41 @@
     src: url(fonts/Poppins-SemiBold.ttf);
 }
 
+/* Colors */
+
+:root {
+    --sidebar: linear-gradient( 96.5deg,  rgba(39,103,187,1) 10.4%, rgba(16,72,144,1) 87.7% );
+    --header: #ffffff;
+    --page: #F9F7F7;
+    --overview: #112D4E;
+    --assignment: #DBE2EF;
+    --goals: #3F72AF;
+    --todo: #DBE2EF;
+    --trending: #ffffff;
+}
+
+.dark-mode {
+    --sidebar: #121729;
+    --header: #101624;
+    --page: #141b2d;
+    --font: #ffffff;
+    --entire: #101624;
+    --overview: #1f2940;
+    --goals: #121729;
+    --assignment:  #1f2940;
+    --todo: #1f2940;
+    --trending: #121729;
+    --link-trend: #667497;
+}
+
+
 /* All Elements */
 
 body {
     margin: 0;
     padding: 0;
+    color: var(--font);
+    background: var(--entire);
 }
 
 #title {
@@ -62,7 +92,7 @@ body {
     display: grid;
     grid-template-columns: 5fr 2fr;
     column-gap: 50px;
-    background-color: #F9F7F7;
+    background-color: var(--page);
     font-family: poppinsR;
 }
 
@@ -74,18 +104,17 @@ body {
 
 .side_dashboard_container {
     position: sticky;
-    transition: 0.5s;
     box-sizing: initial;
     font-family: poppinsB;
     top: 0;
     height: 100vh;
     margin-left: 0;
-    background-image: linear-gradient( 96.5deg,  rgba(39,103,187,1) 10.4%, rgba(16,72,144,1) 87.7% );
+    background: var(--sidebar)
 }
 
 .side_dashboard_container, .profile {
     padding-left: 20px;
-    color: white;
+    color: var(--header);
 }
 
 .side_dashboard_container img {
@@ -105,6 +134,7 @@ body {
     "profpict status";
     column-gap: 10px;
     align-items: center;
+    color: var(--font);
 }
 
 .profile img {
@@ -136,7 +166,10 @@ body {
 
 #mark {
     margin-bottom: 20px;
+    color: var(--font)
 }
+
+/* Hover Effect: https://stackoverflow.com/questions/72154402/my-navigation-bar-height-increases-when-hovering-over-the-links-is-the-line-un */
 
 .sidebar_sub {
     margin-top: 20px;
@@ -147,8 +180,6 @@ body {
     position: absolute;
     width: 220px;
 }
-
-/* Hover Effect: https://stackoverflow.com/questions/72154402/my-navigation-bar-height-increases-when-hovering-over-the-links-is-the-line-un */
 
 .sidebar_sub li {
     position: relative;
@@ -194,10 +225,10 @@ body {
 }
 
 .sidebar_sub li a:hover {
-    color: #112D4E;
+    color: var(--overview);
 }
 
-/* Header or Navigation Bar */
+/* Header Bar */
 
 .top_header img {
     width: 35px;
@@ -209,7 +240,7 @@ body {
     display: flex;
     flex-direction: row;
     position: sticky;
-    background-color: white;
+    background-color: var(--header);
     top: 0;
     height: min-content;
     margin-top: 4%;
@@ -226,7 +257,6 @@ body {
     align-items: center;
     border-radius: 60px;
     padding: 10px 20px;
-    border: 1px solid gray;
     margin-right: auto;
 }
 
@@ -261,7 +291,6 @@ body {
     margin-top: 20px;
     padding: 0 5% 10px 5%;
     font-family: poppinsR;
-    box-shadow: 0 0.2em 0.2em rgba(0,0,0,0.3);
 }
 
 .greeting {
@@ -295,6 +324,7 @@ body {
 .logo img {
     width: 25px;
     height: 25px;
+    cursor: pointer;
 }
 
 .logo button {
@@ -313,7 +343,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 40px;
-    color: white;
+    color: var(--overview-font);
 }
 
 .overview_container div {
@@ -321,9 +351,10 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: #112D4E;
+    background-color: var(--overview);
     border-radius: 20px;
     box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.342);
+    color: white;
 }
 
 #topper_overview {
@@ -339,8 +370,8 @@ body {
 /* Assignments */
 
 #assignments {
-    height: 200px;
-    background-color: #DBE2EF;
+    height: 250px;
+    background-color: var(--assignment);
     overflow: scroll;
     border-radius: 10px;
     box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.342);
@@ -373,7 +404,7 @@ body {
 }
 
 .todo_elements {
-    background-color: #DBE2EF;
+    background-color: var(--todo);
     height: 200px;
     overflow: scroll;
     box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.342);
@@ -384,6 +415,8 @@ body {
     flex-direction: row;
     border-bottom: 1px solid gray;
 }
+
+/* Project */
 
 #check p {
     margin-left: 5px;
@@ -403,37 +436,13 @@ video {
     display: grid;
     grid-template-columns: 400px 1fr;
     gap: 10px;
-    background-color: white;
+    background-color: var(--header);
     box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.342);
 }
 
 #stack {
     display: inline-block;
     margin-top: 2px;
-}
-
-.htm {
-    background-color: rgb(235, 124, 124);
-    border-radius: 10px;
-    color: red;
-    font-family: anonymous;
-    padding: 5px;
-}
-
-.css {
-    background-color: #7c98b9;
-    border-radius: 10px;
-    color: darkblue;
-    font-family: anonymous;
-    padding: 5px;
-}
-
-.js {
-    background-color: rgb(209, 209, 70);
-    border-radius: 10px;
-    color: rgb(133, 89, 8);
-    font-family: anonymous;
-    padding: 5px;
 }
 
 /* Goals */
@@ -443,7 +452,7 @@ video {
 }
 
 .goal_sub {
-    background-color: #3F72AF;
+    background-color: var(--goals);
     padding: 10px 20px 10px 10px;
     color: white;
     border-radius: 10px;
@@ -453,7 +462,7 @@ video {
 /* Trending */
 
 .announcements {
-    background-color: white;
+    background-color: var(--trending);
     border-bottom: 1px solid gray;
     box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.342);
     padding: 20px;
@@ -471,7 +480,12 @@ video {
 
 .sub_announce a {
     text-decoration: none;
-    color: #112D4E;
+    color: var(--link-trend);
+}
+
+#source {
+    color: gray;
+    margin-top: -15px;
 }
 
 /* Plus Button */
@@ -492,4 +506,8 @@ video {
     border: none;
     background: #dde1e7;
     border-radius: 50px;
+}
+
+button {
+    cursor: pointer;
 }
